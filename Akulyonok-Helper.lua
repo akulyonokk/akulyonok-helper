@@ -12520,7 +12520,7 @@ function onScriptTerminate(script, quitGame)
 end
 
 function autoupdate(json_url)
-	local json = getWorkingDirectory() .. '\\'..thisScript().name..'-version.json'
+	local json = getWorkingDirectory() .. '\\' ..own_directory.. '\\'..thisScript().name..'-version.json'
 	if doesFileExist(json) then os.remove(json) end
 	Message('Íà÷àëî ïðîâåðêè îáíîâëåíèÿ')
 	downloadUrlToFile(json_url, json,
@@ -26908,3 +26908,4 @@ changelog = {
 	},
 
 }
+
